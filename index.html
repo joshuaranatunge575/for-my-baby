@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For You, My Love 🤍</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="intro">
+        <h1>Hi baby 🤍</h1>
+        <p>
+            I made this little place just for you.<br>
+            Whenever you feel tired, sad, or miss me — come here.
+        </p>
+        <button onclick="openLetter()">Open a love letter 💌</button>
+<p id="letterText"></p>
+
+    </div>
+
+    <div class="scroll-hint">scroll slowly ↓</div>
+
+    <section>
+    <h2>Just For You 💕</h2>
+    <button onclick="sweetMessage()">Tap me 🥹</button>
+    <p id="sweetText"></p>
+</section>
+
+
+    <section class="memories">
+        <h2>Our Memories 📸</h2>
+        <p>Little moments that mean everything to me.</p>
+
+        <div class="gallery">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
+    <img src="img5.jpg">
+</div>
+
+    </section>
+
+    <section class="surprise">
+        <h2>A Little Truth 🤍</h2>
+        <button onclick="revealTruth()">Tap gently ✨</button>
+        <p id="truthText"></p>
+    </section>
+    <section class="game">
+        <h2>Cute Game 🎮</h2>
+        <p>Click the heart to see how much I love you</p>
+        <div class="heart" onclick="loveGame()">❤️</div>
+        <p id="loveScore"></p>
+    </section>
+<section>
+    <h2>A Little Surprise 💐</h2>
+    <button onclick="showFlowers()">Tap gently</button>
+</section>
+
+<div id="flowerPopup" class="popup">
+    🌷🌸🌹💐🌼
+    <p>This bouquet is for you 🤍</p>
+    <button onclick="closeFlowers()">Close</button>
+</div>
+
+    <section>
+    <h2>Important Question 😳</h2>
+    <p>Do you know how much I love you?</p>
+    <button onclick="yesAnswer()">YES</button>
+    <button onclick="noAnswer()">NO</button>
+    <p id="answerText"></p>
+</section>
+
+<section>
+    <h2>Counting Down To Our Special Day 🗓️</h2>
+    <p id="countdown"></p>
+</section>
+<section>
+    <h2>Our Special Dates 📖</h2>
+    <ul class="dates">
+        <li>💍 First day we talked – 13/09/2025</li>
+        <li>💖 First date – 10/08/2025</li>
+        <li>🌸 First kiss – 18/11/2025</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Our Photo Album 📖</h2>
+    <img id="albumPhoto" src="img1.jpg" class="album-img">
+    <br><br>
+    <button onclick="prevPhoto()">⬅</button>
+    <button onclick="nextPhoto()">➡</button>
+</section>
+<section>
+    <h2>Something Silly 😄</h2>
+    <div class="cartoon">🐻</div>
+    <p>This is me trying to impress you</p>
+</section>
+
+    <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-control" onclick="toggleMusic()">
+    🎵
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<section>
+    <h2>Shhh 🤫</h2>
+    <button onclick="checkSecret()">Enter Secret</button>
+</section>

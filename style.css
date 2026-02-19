@@ -1,0 +1,234 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Make the website scale nicely on mobile */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px; /* base size for mobile */
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    width: 90%;
+    max-width: 250px;
+    font-size: 1em;
+}
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to bottom, #fff0f6, #fef6ff);
+    color: #4a2c3a;
+    text-align: center;
+}
+
+.intro {
+    padding: 120px 20px;
+}
+
+.intro h1 {
+    font-size: 3em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+button {
+    margin-top: 30px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 40px;
+    background: #ff7aa2;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #ff4f87;
+    transform: scale(1.05);
+}
+
+.scroll-hint {
+    font-style: italic;
+    opacity: 0.6;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+.gallery img {
+    width: 220px;
+    border-radius: 18px;
+    margin: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.heart {
+    font-size: 60px;
+    cursor: pointer;
+    animation: float 2s infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(255, 122, 162, 0.9);
+    color: white;
+    font-size: 22px;
+    padding: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.music-control:hover {
+    transform: scale(1.1);
+}
+#letterText {
+    margin-top: 30px;
+    font-size: 1.2em;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeIn 1.2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+#sweetText {
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+.album-img {
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.dates {
+    list-style: none;
+    padding: 0;
+}
+
+.dates li {
+    margin: 10px;
+    font-style: italic;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff0f6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.popup.show {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.cartoon {
+    font-size: 80px;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+/* MOBILE STYLING */
+@media screen and (max-width: 768px) {
+    .intro {
+        padding: 60px 20px;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .gallery img {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .heart {
+        font-size: 50px;
+    }
+
+    .album-img {
+        width: 90%;
+    }
+
+    .music-control {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+        font-size: 20px;
+    }
+
+    #letterText,
+    #sweetText,
+    #answerText,
+    .dates li,
+    #countdown {
+        font-size: 1em;
+    }
+
+    .cartoon {
+        font-size: 60px;
+    }
+
+    .popup {
+        width: 90%;
+        padding: 20px;
+    }
+}
+button {
+    display: block;
+    margin: 20px auto;
+}
+#countdown {
+    font-size: 1.5em;
+    color: #ff4f87;
+    animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+}
